@@ -1,8 +1,8 @@
 from email.message import EmailMessage
 import smtplib
 
-sender = "tharaswan@outlook.com"
-devteam=["livingsha2468@outlook.com","swantha@outlook.com"]
+sender = "mailid"
+devteam=["mailid1","mailid2"]
 recipient = devteam
 message = "happy new year"
 
@@ -14,6 +14,6 @@ email.set_content(message)
 
 smtp = smtplib.SMTP("smtp.office365.com", port=587)
 smtp.starttls()
-smtp.login(sender, "8870655395@pP")
+smtp.login(sender, "password")
 smtp.sendmail(sender, recipient, email.as_string())
 smtp.quit()
